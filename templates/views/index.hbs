@@ -4,15 +4,18 @@
 
 <head> 
     <title>Weather</title>
-    <link rel="icon" href="/img/weather.png">
+    <link rel="icon" href="/img/weather_icon2.jpg">
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
+    <video id="videoBG" poster="/img/rain.jpg" autoplay muted loop>
+            <source src="/img/snow_fall1.mp4" type="video/mp4">
+        </video>
     <div class="main-content">
         {{>header}}
 
-        <p>Use this site to get your weather!</p>
+        <p>Enter The City Name </p>
 
         <form>
             <input placeholder="Location">

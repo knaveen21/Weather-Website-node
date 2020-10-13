@@ -1,45 +1,60 @@
 body {
-    color: #333333;
-    font-family: arial;
-    max-width: 650px;
-    margin: 0 auto;
-    padding: 0 16px;
+    width:100vw;
+    background-color: rgb(114, 145, 173);
+    margin: 0
 
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh
+
 }
 
 .main-content {
-    flex-grow: 1;
+    
+    color: #fcfcfc;
+    font-family: arial;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 footer {
-    color: #888888;
-    border-top: 1px solid #eeeeee;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+    color: white;
+    text-align: center;
+    padding-bottom: 16px;;
     margin-top: 16px;
-    padding: 16px 0;
+    font-size: 20px;
+    
+    
+    
+    
 }
 
 header {
     margin-top: 16px;
     margin-bottom: 48px;
+   
 }
 
 h1 {
     font-size: 64px;
     margin-bottom: 16px;
+    color: rgb(15, 236, 207);
 }
 
 header a {
-    color: #888888;
+    color: white;
     margin-right: 16px;
     text-decoration: none;
 }
-
-.portrait {
-    width: 250px;
+header a:hover{
+    color: #ccd4cc;
 }
+
+
 
 input{
     border: 2px solid #cccccc;
@@ -55,4 +70,45 @@ button{
     padding: 8px;
     border-radius: 10px;
     
+    
+}
+button:hover{
+    
+    background: white;
+    color: #888888;
+
+    
+    
+}
+
+#message-2{
+    font-size: 20px;
+}
+
+
+#videoBG {
+    position:fixed;
+    z-index: -1;
+
+}
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #videoBG { 
+        width:auto;
+        height: 100%;
+    }
+}
+@media (max-width: 767px) {
+    #videoBG {
+        display: none;
+    }
+    body {
+        background: url('/img/rain.jpg');
+        background-size: cover;
+    }
 }
